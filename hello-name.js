@@ -2,10 +2,13 @@ var express = require('express');
 var port = 3000;
 var app = express();
 
-
-
 app.get('/name/:user_name', function(req,res) {
-  res.end('Hello' + req.params.user_name)
+  res.status(200);
+  res.set('Content-type', 'text/html');
+  res.end('<html><body>' +
+    '<h1>Hello ' + req.params.user_name + '</h1>' +
+    '</body></html>'
+  );
 });
 
 app.get('*', function(req, res){
