@@ -16,5 +16,7 @@ app.get('*', function(req, res){
 });
 
 app.listen(port, function(){
-  console.log('the server is running, please open your browser at http://localhost:%s', port);
+  console.log('The server is running, ' +
+    ' please open your browser at http://localhost:%s',
+     port);
 });
