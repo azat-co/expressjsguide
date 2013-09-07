@@ -1,0 +1,90 @@
+.cbp-qtrotator {
+	position: relative;
+	margin: 0 auto;
+	max-width: 800px;
+	width: 100%;
+	min-height: 100px;
+}
+
+.cbp-qtrotator .cbp-qtcontent {
+	position: absolute;
+	min-height: 200px;
+	border-top: 1px solid #f4f4f4;
+	border-bottom: 1px solid #f4f4f4;
+	padding: 2em 0;
+	top: 0;
+	z-index: 0;
+	opacity: 0;
+	width: 100%;
+}
+
+.no-js .cbp-qtrotator .cbp-qtcontent {
+	border-bottom: none;
+}
+
+.cbp-qtrotator .cbp-qtcontent.cbp-qtcurrent,
+.no-js .cbp-qtrotator .cbp-qtcontent {
+	position: relative; 
+	z-index: 100;
+	pointer-events: auto;
+	opacity: 1;
+}
+
+.cbp-qtrotator .cbp-qtcontent:before,
+.cbp-qtrotator .cbp-qtcontent:after {
+	content: " ";
+	display: table;
+}
+
+.cbp-qtrotator .cbp-qtcontent:after {
+	clear: both;
+}
+
+.cbp-qtprogress {
+	position: absolute;
+	background: #69c8c5;
+	height: 1px;
+	width: 0%;
+	top: 0;
+	z-index: 1000;
+	margin:0 20px;
+	display:none;
+}
+
+/*.cbp-qtrotator blockquote {
+	margin: 0;
+	padding: 0;
+}
+
+.cbp-qtrotator blockquote p {
+	/*font-size: 2em;
+	color: #888;
+	font-weight: 300;
+	margin: 0.4em 0 1em;
+}
+
+.cbp-qtrotator blockquote footer {
+	font-size: 1.2em;
+}
+
+.cbp-qtrotator blockquote footer:before {
+	content: '― ';
+}
+
+.cbp-qtrotator .cbp-qtcontent img {
+	float: right;
+	margin-left: 3em;
+}*/
+
+/* Example for media query */
+@media screen and (max-width: 30.6em) { 
+
+	.cbp-qtrotator {
+		font-size: 70%;
+	}
+
+	.cbp-qtrotator img {
+		width: 80px;
+	}
+
+}
