@@ -272,58 +272,63 @@
   ga('send', 'pageview');
 
 </script>
-    <script>
+
+<script>
 
 //Share on Facebook
 var shareOnFacebook = function() {
-    window.open(
-      'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href), 
-      'facebook-share-dialog', 
-      'width=626,height=436'); 
-    return false; 
+  window.open(
+    'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href), 
+    'facebook-share-dialog', 
+    'width=626,height=436'
+  ); 
+  return false; 
 }
 
 var shareOnTwitter = function() {
-     window.open(
-      'http://clicktotweet.com/djzS6', 
-      'twitter-share-dialog', 
-      'width=626,height=436'); 
-    return false; 
+  window.open(
+    'http://clicktotweet.com/djzS6', 
+    'twitter-share-dialog', 
+    'width=626,height=436'
+  ); 
+  return false; 
 }
-	$(function () {    
-		// Testimonials rotator
-		$( '#cbp-qtrotator' ).cbpQTRotator();
-		// Image Zoom
-		$('.thumbnails').magnificPopup({
-		delegate: 'a',
-		type: 'image',
-		closeOnContentClick: false,
-		closeBtnInside: true,
-		mainClass: 'mfp-with-zoom mfp-img-mobile',
-		image: {
-			verticalFit: true,
-			titleSrc: function(item) {
-				return item.el.attr('title') + '<small>How to sell books online</small>';
-			}
-		},
-		gallery: {
-			enabled: true
-		},
-		zoom: {
-			enabled: true,
-			duration: 300, // don't foget to change the duration also in CSS
-			opener: function(element) {
-				return element.find('img');
-			}
-		}
-		});
 
-    //Attach share on Facebook events
-    $('.share-facebook').click(shareOnFacebook);
-    $('.share-twitter').click(shareOnTwitter);
+$(function () {    
+	// Testimonials rotator
+	$( '#cbp-qtrotator' ).cbpQTRotator();
+	// Image Zoom
+	$('.thumbnails').magnificPopup({
+	delegate: 'a',
+	type: 'image',
+	closeOnContentClick: false,
+	closeBtnInside: true,
+	mainClass: 'mfp-with-zoom mfp-img-mobile',
+	image: {
+		verticalFit: true,
+		titleSrc: function(item) {
+			return item.el.attr('title') + '<small>How to sell books online</small>';
+		}
+	},
+	gallery: {
+		enabled: true
+	},
+	zoom: {
+		enabled: true,
+		duration: 300, // don't foget to change the duration also in CSS
+		opener: function(element) {
+			return element.find('img');
+		}
+	}
 	});
 
+  //Attach share on Facebook events
+  $('.share-facebook').click(shareOnFacebook);
+  $('.share-twitter').click(shareOnTwitter);
 
-	</script>
+});
+
+
+</script>
   </body>
 </html>
