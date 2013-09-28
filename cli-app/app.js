@@ -33,6 +33,13 @@ if ('development' == app.get('env')) {
 app.get('/', routes.index);
 app.get('/users', user.list);
 
+app.get('/admin', function(req, res, next) {
+  if (!req.query._token) return next(new Error('no token provided'));
+  }, function(req, res, next) {
+  res.render('admin');
+});
+
+
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
 });
