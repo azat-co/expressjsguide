@@ -1,4 +1,3 @@
-
 /**
  * Module dependencies.
  */
@@ -13,7 +12,7 @@ var app = express();
 
 // all environments
 app.set('port', process.env.PORT || 3000);
-app.set('views', __dirname + '/views');
+app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 app.use(express.favicon());
 app.use(express.logger('dev'));
@@ -22,7 +21,7 @@ app.use(express.methodOverride());
 app.use(express.cookieParser('your secret here'));
 app.use(express.session());
 app.use(app.router);
-app.use(require('less-middleware')({ src: __dirname + '/public' }));
+app.use(require('less-middleware')({ src: path.join(__dirname, 'public' })));
 app.use(express.static(path.join(__dirname, 'public')));
 
 // development only
@@ -34,9 +33,9 @@ app.get('/', routes.index);
 app.get('/users', user.list);
 
 app.get('/admin', function(req, res, next) {
-  if (!req.query._token) return next(new Error('no token provided'));
+    if (!req.query._token) return next(new Error('no token provided'));
   }, function(req, res, next) {
-  res.render('admin');
+    res.render('admin');
 });
 
 
