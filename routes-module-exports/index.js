@@ -1,1 +1,1 @@
-exports.FindStories= require('./find-stories.js')
+exports.FindStories= require('./find-stories.js');

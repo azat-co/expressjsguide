@@ -1,15 +1,14 @@
 var cluster = require('cluster');
-var http = require('http');
 var numCPUs = require('os').cpus().length;
 var express = require('express');
 
 if (cluster.isMaster) {
-  console.log (' Fork %s worker(s) from master', numCPUs)
+  console.log (' Fork %s worker(s) from master', numCPUs);
   for (var i = 0; i < numCPUs; i++) {
     cluster.fork();
-  };
+  }
   cluster.on('online', function(worker) {
-    console.log ('worker is running on %s pid', worker.process.pid)
+    console.log ('worker is running on %s pid', worker.process.pid);
   });
   cluster.on('exit', function(worker, code, signal) {
     console.log('worker with %s is closed', worker.process.pid );
@@ -20,7 +19,6 @@ if (cluster.isMaster) {
   var app = express();
   app.get('*', function(req, res) {
     res.send(200, 'cluser ' + cluster.worker.process.pid + ' responded \n');
-  })
+  });
   app.listen(port);
-
 }

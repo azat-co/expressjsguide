@@ -1,5 +1,4 @@
 var Faker = require('Faker');
-var fs = require('fs');
 var body = [];
 
 for (var i = 0; i < 1000; i++) {

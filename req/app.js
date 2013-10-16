@@ -48,14 +48,14 @@ app.post('/upload', function(req, res){
   console.log(req.files.archive);
   //read req.files.archive.path
   //process the data
-  //save the data  
+  //save the data
   res.end();
-})
+});
 
 app.get('/route', function(req, res){
   console.log(req.route);
   res.end();
-})
+});
 app.get('/', routes.index);
 app.get('/users', user.list);
 

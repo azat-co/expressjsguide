@@ -55,7 +55,7 @@ app.get('/set-csv', function(req, res) {
   var body = 'title, tags\n' +
     'Express.js Guide, node.js express.js\n' +
     'Rapid Prototyping with JS, backbone.js, node.js, mongodb\n' +
-    'JavaScript: The Good Parts, javascript\n'
+    'JavaScript: The Good Parts, javascript\n';
   res.set({'Content-Type': 'text/plain',
     'Content-Length': body.length,
     'Set-Cookie': ['type=reader', 'language=javascript']});
@@ -83,14 +83,14 @@ app.get('/json', function(req, res) {
   res.json(200, [{title: 'Express.js Guide', tags: 'node.js express.js'},
     {title: 'Rapid Prototyping with JS', tags: 'backbone.js, node.js, mongodb'},
     {title: 'JavaScript: The Good Parts', tags: 'javascript'}
-  ]);    
+  ]);
 });
 
 app.get('/jsonp', function (req, res) {
   res.jsonp(200, [{title: 'Express.js Guide', tags: 'node.js express.js'},
     {title: 'Rapid Prototyping with JS', tags: 'backbone.js, node.js, mongodb'},
     {title: 'JavaScript: The Good Parts', tags: 'javascript'}
-  ]);    
+  ]);
 });
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));

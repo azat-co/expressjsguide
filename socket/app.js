@@ -37,7 +37,7 @@ io.sockets.on('connection', function (socket) {
   socket.on('messageChange', function (data) {
     console.log(data);
     socket.emit('receive', data.message.split('').reverse().join('') );
-  })
+  });
 });
 
 server.listen(app.get('port'), function(){
