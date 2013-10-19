@@ -65,14 +65,14 @@
             	<div class="span7">
                 	<h1 class="hero-title">Express.js Guide</h1>
                     <p class="hero-desc">
-                    Express.js API reference, quick start guide and hands-on tutorials aplenty. 150+ pages, 40+ illustrations, 6+ examples. The ebook is coming out in fall 2013. 
+                    Express.js API reference, quick start guides and plenty of hands-on tutorials: 280+ pages, 60+ illustrations and 20+ examples. 
                     </p>
                     <form class="hero-form text-center">
                         <fieldset>
-                            <label>Get the ebook early for $9.99 (reg. $29.99)</label>
-                            <a href="http://gum.co/express" class="gumroad-button0 btn btn-info btn-large btn-block">Pre-Order Now</a>
+                            <label>Get the ebook for only $29.99</label>
+                            <a href="http://gum.co/express" class="gumroad-button0 btn btn-info btn-large btn-block">Read Now</a>
                         </fieldset>
-                        <p class="text-small-alt">Ebook includes PDF, ePub/iPad and Mobi/Kindle versions (when released)<br/><a href="https://gumroad.com/guide/basics/is-gumroad-for-me#security">Secured by Gumroad</a></p>
+                        <p class="text-small-alt">Ebook includes PDF, ePub/iPad and Mobi/Kindle versions.<br/><a href="https://gumroad.com/guide/basics/is-gumroad-for-me#security">Secured by Gumroad</a></p>
                     </form>
                 </div><!--/span7-->
             </div><!--/row-->
@@ -94,6 +94,18 @@
           		<div class="accordion" id="chapter">
                     <div class="accordion-group">
                       <div class="accordion-heading">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#chapter" href="#collapseForeword">
+                           Foreword by Anatoliy Chakkaev 
+                        </a>
+                      </div>
+                      <div id="collapseForeword" class="accordion-body collapse in">
+                        <div class="accordion-inner">
+                          <p class="text-lead">Foreword by Anatoliy Chakkaev (<a href="https://twitter.com/1602">@1602</a>), the creator of <a href="http://compoundjs.com">CompoundJS</a> and <a href="http://jugglingdb.co">JugglingDB</a>. </p>
+                        </div>
+                      </div>
+                    </div><!--/accordion-group-->
+                    <div class="accordion-group">
+                      <div class="accordion-heading">
                         <a class="accordion-toggle" data-toggle="collapse" data-parent="#chapter" href="#collapseOne">
                           1. Quick Start
                         </a>
@@ -106,7 +118,7 @@
                             <li>Installation</li>
                             <li>Hello World Example</li>
                             <li>CLI</li>
-                            <li>Structure</li>
+                            <li>MVC Structure and Modules</li>
                           </ul>
                         </div>
                       </div>
@@ -121,9 +133,12 @@
                         <div class="accordion-inner">
                            <p class="text-lead">This part can be used as a stand alone reference for the Express.js API, because it contains description of all the main methods and properties, as well as short examples and exaplanations.</p>
                           <ul class="unstyled list-bullet">
-                            <li>Configuration</li>
+                            <li>Configuration and Settings</li>
                             <li>Middlewares</li>
+                            <li>Parameters</li>
                             <li>Routing</li>
+                            <li>Request and Response</li>
+                            <li>Running an App</li>
                             <li>Error Handling</li>
                           </ul>                          
                         </div>
@@ -137,8 +152,18 @@
                       </div>
                       <div id="collapseThree" class="accordion-body collapse">
                         <div class="accordion-inner">
-                           <p class="text-lead">The best industry practices from the trenches of running production Node.js for everything at the Joyent/Node.js partner Storify.</p>
-                          
+                          <p class="text-lead">The best industry practices from the trenches of running production Node.js for everything at the Joyent/Node.js partner Storify. Some topics involve:</p>
+                          <ul class="unstyled list-bullet">
+                            <li>Abstraction</li>
+                            <li>Streams</li>
+                            <li>Redis</li>
+                            <li>Clusters</li>
+                            <li>Authentication</li>
+                            <li>Stylus, LESS and SASS</li>
+                            <li>Domains</li>
+                            <li>Security</li>
+                            <li>Socket.IO</li>
+                          </ul>                           
                         </div>
                       </div>
                     </div><!--/accordion-group-->
@@ -153,10 +178,11 @@
                           <p class="text-lead">Hands-on REST API servers with NPM libraries (superagent, Mongoose, Mongoskin, Mocha)third-party services (Storify API, AngelList), databases (MongoDB) and front-end clients (Backbone.js).</p>
                             <ul class="unstyled list-bullet">
                               <li>Instagram Gallery</li>
-                              <li>Chat</li>
+                              <li>Todo App</li>
                               <li>REST API</li>
                               <li>HackHall</li>
                           </ul> 
+                          <p>In addition to four aforementioned major examples, there are many other smaller ones. Their full source code is available for examination at <a href="http://github.com/azat-co/expressjsguide">github.com/azat-co/expressjsguide</a>.
                         </div>
                       </div>
                     </div><!--/accordion-group-->
@@ -236,9 +262,9 @@
                         <div class="span9">
                         <fieldset>
                             <div class="control-group text-center">
-                                <label>Get the ebook early for $9.99 (reg. $29.99)</label>                             
-                                <a href="http://gum.co/express" class="gumroad-button0 btn btn-info btn-large btn-block">Pre-Order Now</a>
-                                <p class="text-small-alt">Ebook includes PDF, ePub/iPad and Mobi/Kindle versions (when released)<br/><a href="https://gumroad.com/guide/basics/is-gumroad-for-me#security">Secured by Gumroad</a></p>
+                                <label>Get the ebook for only $29.99</label>                             
+                                <a href="http://gum.co/express" class="gumroad-button0 btn btn-info btn-large btn-block">Read Now</a>
+                                <p class="text-small-alt">Ebook includes PDF, ePub/iPad and Mobi/Kindle versions.<br/><a href="https://gumroad.com/guide/basics/is-gumroad-for-me#security">Secured by Gumroad</a></p>
                                                            
                             </div><!--/control-group-->
                         </fieldset>
@@ -292,7 +318,8 @@ var shareOnFacebook = function() {
 
 var shareOnTwitter = function() {
   window.open(
-    'http://clicktotweet.com/djzS6', 
+    'http://clicktotweet.com/Ue2Us',
+    // 'http://clicktotweet.com/djzS6', 
     'twitter-share-dialog', 
     'width=626,height=436'
   ); 

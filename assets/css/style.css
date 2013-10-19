@@ -562,3 +562,10 @@ footer{
 	}
 	
 }
+
+.hero-desc a {
+	color:#414040;
+}
+.hero-desc a:hover {
+	color:#111010;
+}
