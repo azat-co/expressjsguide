@@ -1,1 +1,1 @@
-exports.stories = require('./find-stories.js')
+exports.stories = require('./find-stories.js');

@@ -26,17 +26,17 @@ var domain = require('domain');
 var defaultHandler = express.errorHandler();
 app.use(function (error, req, res, next) {
   if (domain.active) {
-    console.info('caught with domain', domain.active)
+    console.info('caught with domain', domain.active);
     domain.active.emit("error", error);
   } else {
-    console.info('no domain')
+    console.info('no domain');
     defaultHandler(error, req, res, next);
   }
 });
 app.get("/e", function (req, res, next) {
   var d = domain.create();
   d.on("error", function (error) {
-    console.error(error.stack)
+    console.error(error.stack);
     res.send(500, {"error": error.message});
   });
   d.run(function () {
@@ -49,6 +49,6 @@ app.get("/e", function (req, res, next) {
 app.get('/', routes.index);
 app.get('/users', user.list);
 
-http.createServer(app).listen(app.get('port'), function(){
+http.createServer(app).listen(app.get('port'), function () {
   console.log('Express server listening on port ' + app.get('port'));
 });
