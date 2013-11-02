@@ -577,3 +577,7 @@ footer{
 	text-align: left;
 	list-style-type: none;
 }
+
+#packages h1 {
+	margin-bottom: 30px;
+}
