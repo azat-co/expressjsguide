@@ -569,3 +569,11 @@ footer{
 .hero-desc a:hover {
 	color:#111010;
 }
+.includes {
+	text-align: left;
+	/*margin-left: 60px;*/
+}
+.includes ul{
+	text-align: left;
+	list-style-type: none;
+}
