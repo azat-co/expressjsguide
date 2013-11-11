@@ -216,7 +216,8 @@ header{
 }
 .sec-title span{
 	border-radius: 4px;
-	background-color:#69c8c5;
+	/*background-color:#69c8c5;*/
+	background-color:#0D0E0E;
 	color:#fff;
 	font-weight:400!important;
 	padding:5px 10px;
@@ -298,7 +299,7 @@ a.thumbnail:hover{
  * Testimonial
  */
 
-#testimonial
+#testimonial, #packages
 {
 	background:#f2f2f2;
 }
@@ -580,4 +581,12 @@ footer{
 
 #packages h1 {
 	margin-bottom: 30px;
+	margin-top: 40px;
+}
+.cbp-qtrotator {
+position: relative;
+margin: 0 auto;
+/*max-width: 800px;*/
+width: 100%;
+min-height: 200px;
 }
