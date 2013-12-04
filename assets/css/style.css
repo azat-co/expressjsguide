@@ -585,18 +585,18 @@ footer{
 	margin-top: 40px;
 }
 .cbp-qtrotator {
-position: relative;
-margin: 0 auto;
-/*max-width: 800px;*/
-width: 100%;
-min-height: 200px;
+	position: relative;
+	margin: 0 auto;
+	/*max-width: 800px;*/
+	width: 100%;
+	min-height: 200px;
 }
 .packages-footer-copy {
 	margin-top:10px;
 	text-align: center;
 }
 .testimonials-box {
-	height: 510px;
+	min-height: 510px;
 }
 .paperback {
 	margin-top:40px;
