@@ -534,7 +534,7 @@ footer{
 }
 
 @media (min-width: 768px) and (max-width: 979px) {
-	.media .media-body .span3 {
+	.media .media-body .span4 {
 		min-width: 250px;
 	}
 	.hero-form .text-small{
