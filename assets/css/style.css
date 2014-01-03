@@ -532,7 +532,11 @@ footer{
 	}
 
 }
+
 @media (min-width: 768px) and (max-width: 979px) {
+	.media .media-body .span3 {
+		min-width: 250px;
+	}
 	.hero-form .text-small{
 		margin-top:10px;
 	}
@@ -600,4 +604,10 @@ footer{
 }
 .paperback {
 	margin-top:40px;
+}
+#packages h1 {
+	margin-bottom: 10px;
+}
+#packages .subhead {
+	margin-bottom: 30px;
 }
