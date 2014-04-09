@@ -611,3 +611,35 @@ footer{
 #packages .subhead {
 	margin-bottom: 30px;
 }
+.hide {
+	display: :none;
+}
+.show {
+	display: block;
+}
+.text-small-alt a {
+	color: #fff;
+}
+.text-small-alt a:hover {
+	text-decoration: underline;
+}
+.hero-form a {
+	color: #fff;
+	font-weight: bold;
+}
+.hero-form label a:hover {
+	/*text-decoration: underline;*/
+}
+.hero-form label a i {
+	/*left: 5px;*/
+}
+.hero-form label a:hover i{
+	text-decoration: none;
+}
+.hero-form label {
+	cursor: default;
+}
+.hero-form label.sub {
+	padding-bottom: 2px;
+	padding-top: 12px;
+}
