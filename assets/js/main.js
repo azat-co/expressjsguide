@@ -1,6 +1,6 @@
 $(document).ready(function(){
     $('a[data-track]').click(function(e){
-        $target = $(e.currentTarget)
+        var $target = $(e.currentTarget)
         _gaq.push(['_trackEvent', $target.attr('data-track'), $target.attr('href')])
         return true
     })
@@ -28,8 +28,9 @@ $(document).ready(function(){
         }
     });
 
-    $('a').click(function() {
-        firstCta.event('Clicked on link');
+    $('a').click(function(e) {
+        var $target = $(e.currentTarget)
+        firstCta.event('Clicked on link'+$target.attr('href'));
     });
 
 })
