@@ -643,3 +643,6 @@ footer{
 	padding-bottom: 2px;
 	padding-top: 12px;
 }
+a.read-sample {
+  cursor: pointer;
+}
