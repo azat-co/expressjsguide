@@ -646,3 +646,6 @@ footer{
 a.read-sample {
   cursor: pointer;
 }
+.btn-danger:hover {
+  background-color: #8D3F3E;
+}
