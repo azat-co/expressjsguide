@@ -27,22 +27,22 @@ var defaultHandler = express.errorHandler();
 app.use(function (error, req, res, next) {
   if (domain.active) {
     console.info('caught with domain', domain.active);
-    domain.active.emit("error", error);
+    domain.active.emit('error', error);
   } else {
     console.info('no domain');
     defaultHandler(error, req, res, next);
   }
 });
-app.get("/e", function (req, res, next) {
+app.get('/e', function (req, res, next) {
   var d = domain.create();
-  d.on("error", function (error) {
+  d.on('error', function (error) {
     console.error(error.stack);
-    res.send(500, {"error": error.message});
+    res.send(500, {'error': error.message});
   });
   d.run(function () {
     //error prone code goes here
-    throw new Error("Database is down.");
-    // next(new Error("Database is down."));
+    throw new Error('Database is down.');
+    // next(new Error('Database is down.'));
   });
 });
 

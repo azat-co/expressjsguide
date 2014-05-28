@@ -14,7 +14,7 @@
     "grunt-contrib-jshint": "~0.6.4",
     "load-grunt-tasks": "~0.1.0"
   },
-  "author": "Azat Mardanov (http://webapplog.com/)",
+  "author": "Azat Mardan (http://webapplog.com/)",
   "license": "BSD",
   "keywords": ["nodejs", "expressjsguide", "expressjs"],
   "homepage": "http://expressjsguide.com/",
